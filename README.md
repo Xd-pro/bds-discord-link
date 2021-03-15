@@ -12,11 +12,8 @@ Type python and press enter
 Install python from the Microsoft store page that pops up
 Move your BDS server to a folder named bds, in the same folder as main.py 
 
-any folder you like \
-                     |- main.py
-                     |- bds \
-                            |- bedrock_server.exe
-                            |- all the other server files such as server.properties
+![image](https://user-images.githubusercontent.com/62808970/111223661-58d7d480-85d5-11eb-8f30-2757dfef3643.png)
+
 
 Open main.py with a text editor
 Go to line 8
