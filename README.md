@@ -19,7 +19,9 @@ Type python and press enter
 
 Install python from the Microsoft store page that pops up
 
-Move your BDS server to a folder named bds, in the same folder as main.py 
+Move your BDS server to a folder named bds, in the same folder as main.py
+
+Type ```pip install discord.py```
 
 ![image](https://user-images.githubusercontent.com/62808970/111223661-58d7d480-85d5-11eb-8f30-2757dfef3643.png)
 
@@ -37,6 +39,8 @@ Create a discord application and bot (https://www.howtogeek.com/364225/how-to-ma
 Enable members intent on your Discord bot page
 
 Change the number inside the ()s and ""s to your Discord bot's token
+
+Run main.py to start the server
 
 ## Discord commands
 
