@@ -37,3 +37,11 @@ Create a discord application and bot (https://www.howtogeek.com/364225/how-to-ma
 Enable members intent on your Discord bot page
 
 Change the number inside the ()s and ""s to your Discord bot's token
+
+## Discord commands
+
+!linkaccount - link your Discord account to your Minecraft account
+
+!unlinkaccount - unlink your Discord account to your Minecraft account
+
+!check <@user> - check who a Discord account is linked to
