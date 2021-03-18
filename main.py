@@ -3,6 +3,7 @@ import threading
 import discord
 import random
 import pickle
+import os
 from discord.ext import commands, tasks
 
 link_role_id = 821096795013775361
@@ -94,7 +95,10 @@ async def check(ctx, member: discord.Member):
 
 def bds_thread_function(name):
     global bds
-    bds = subprocess.Popen([r"bds\bedrock_server"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    if os.name != 'nt':
+    	bds = subprocess.Popen([r"./bedrock_server"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd="bds/")
+    else:
+        bds = subprocess.Popen([r"bds/bedrock_server.exe"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in bds.stdout:
         print(line.decode("utf-8").replace("\n", ""))
 
