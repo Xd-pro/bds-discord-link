@@ -13,21 +13,19 @@ Pickle data format
 
 Download main.py
 
-(Windows
+### Windows
 
 Open cmd (Win+R)
 
 Type python and press enter
 
-Install python from the Microsoft store page that pops up)
+Install python from the Microsoft store page that pops up
 
-(Linux
+### Linux
 
 Install python 3 from ```apt-get python3```
 
 Install pip 3 from ```apt-get python3-pip```
-
-)
 
 Move your BDS server to a folder named bds, in the same folder as main.py
 
