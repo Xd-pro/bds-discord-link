@@ -1,5 +1,5 @@
 # BDS Discord Link
-Wrapper for BDS that enables Discord linking.
+Wrapper for BDS that enables Discord linking. Windows will be first priority but (Ubuntu) Linux is supported.
 ## Features
 Role rewards for linking
 
