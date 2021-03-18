@@ -13,15 +13,25 @@ Pickle data format
 
 Download main.py
 
+(Windows
+
 Open cmd (Win+R)
 
 Type python and press enter
 
-Install python from the Microsoft store page that pops up
+Install python from the Microsoft store page that pops up)
+
+(Linux
+
+Install python 3 from ```apt-get python3```
+
+Install pip 3 from ```apt-get python3-pip```
+
+)
 
 Move your BDS server to a folder named bds, in the same folder as main.py
 
-Type ```pip install discord.py```
+Type ```pip install discord.py``` or ```pip3 install discord.py``` on Linux
 
 ![image](https://user-images.githubusercontent.com/62808970/111223661-58d7d480-85d5-11eb-8f30-2757dfef3643.png)
 
