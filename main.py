@@ -48,6 +48,8 @@ async def on_ready():
 async def linkaccount(ctx, username=None):
     if username is not None:
         code = random.randint(1, 9999)
+        while str(code) in pending_codes.keys():
+            code = random.randint(1, 9999)
         print(f"[MCBE-link] Link account command recieved from MC: {username} Discord: {ctx.message.author} Code: {code}")
         bds.stdin.write(f"msg {username} {ctx.message.author} wants to link their Discord account to this Minecraft account, and they can do so using this code: {code}. If this wasn't you, ignore it.\n".encode())
         bds.stdin.flush()
@@ -96,7 +98,7 @@ async def check(ctx, member: discord.Member):
 def bds_thread_function(name):
     global bds
     if os.name != 'nt':
-    	bds = subprocess.Popen([r"./bedrock_server"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd="bds/")
+        bds = subprocess.Popen([r"./bedrock_server"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd="bds/")
     else:
         bds = subprocess.Popen([r"bds/bedrock_server.exe"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in bds.stdout:
@@ -123,4 +125,4 @@ modding_thread = threading.Thread(target=modding_thread_function, args=(3,))
 input_thread.start()
 modding_thread.start()
 bds_thread.start()
-client.run("token here")
+client.run("token")
